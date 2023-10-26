@@ -13,6 +13,7 @@ public class TablaMulti {
         System.out.println("Tabla del " + tabla + ":");
 
         for (int i = 1; i <= 10; i++) {
+            
             System.out.println(tabla + " por " + i + " es igual a " + (tabla * i));
         }
     }
