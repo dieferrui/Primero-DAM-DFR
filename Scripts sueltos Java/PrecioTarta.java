@@ -21,9 +21,8 @@ public class PrecioTarta {
             System.out.println("Escoja el sabor de su tarta: manzana, fresa o chocolate.");
             sabor = System.console().readLine();
 
-            if (!sabor.equalsIgnoreCase(FRESA) && !sabor.equalsIgnoreCase(MANZA) && !sabor.equalsIgnoreCase(CHOCO)) {
+            if (!FRESA.equalsIgnoreCase(sabor) && !CHOCO.equalsIgnoreCase(sabor) && !MANZA.equalsIgnoreCase(sabor)) {
                 System.out.println("Introduzca un sabor válido.");
-                continue;
             } else {
                 switch (sabor) {
                 case MANZA:
@@ -37,9 +36,8 @@ public class PrecioTarta {
                         System.out.println("Escoja el tipo de chocolate: blanco o negro.");
                         choco = entradaTec.nextLine();
 
-                        if (!choco.equalsIgnoreCase(CH_BLANCO) && !choco.equalsIgnoreCase(CH_NEGRO)) {
+                        if (!CH_BLANCO.equalsIgnoreCase(choco) && !CH_NEGRO.equalsIgnoreCase(choco)) {
                             System.out.println("Introduzca un sabor de chocolate válido.");
-                            continue;
                         } else {
                             if (choco.equalsIgnoreCase(CH_BLANCO)) {
                                 precioBase = 15.0d;
@@ -49,6 +47,7 @@ public class PrecioTarta {
                             break;
                         }
                     }
+                    break;
                 }
                 break;
             }
