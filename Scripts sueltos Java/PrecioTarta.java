@@ -16,7 +16,7 @@ public class PrecioTarta {
             System.out.println("Escoja el sabor de su tarta: manzana, fresa o chocolate.");
             sabor = System.console().readLine();
 
-            if (!sabor.equals("fresa") && !sabor.equals("manzana") && !sabor.equals("chocolate")) {
+            if (!sabor.equalsIgnoreCase("fresa") && !sabor.equalsIgnoreCase("manzana") && !sabor.equalsIgnoreCase("chocolate")) {
                 System.out.println("Introduzca un sabor válido.");
                 continue;
             } else {
@@ -32,11 +32,11 @@ public class PrecioTarta {
                         System.out.println("Escoja el tipo de chocolate: blanco o negro.");
                         choco = entradaTec.nextLine();
 
-                        if (!choco.equals("blanco") && !choco.equals("negro")) {
+                        if (!choco.equalsIgnoreCase("blanco") && !choco.equalsIgnoreCase("negro")) {
                             System.out.println("Introduzca un sabor de chocolate válido.");
                             continue;
                         } else {
-                            if (choco.equals("blanco")) {
+                            if (choco.equalsIgnoreCase("blanco")) {
                                 precioBase = 15.0d;
                             } else {
                                 precioBase = 14.0d;
@@ -51,23 +51,23 @@ public class PrecioTarta {
 
         System.out.println("¿Quiere nata? Escriba \"si\" o \"no\".");
         String nata = entradaTec.nextLine();
-        if (nata.equals("si")) {
+        if (nata.equalsIgnoreCase("si")) {
             precioNata = 2.50d;
         }
 
         System.out.println("¿Quiere nombre? Escriba \"si\" o \"no\".");
         String nombre = entradaTec.nextLine();
-        if (nombre.equals("si")) {
+        if (nombre.equalsIgnoreCase("si")) {
             precioNombre = 2.75d;
             System.out.print("Escriba el nombre de la tarta: ");
             nombreTarta = entradaTec.nextLine();
         }
 
         System.out.println("Tarta de " + sabor + " " + choco + ": " + precioBase + "$.");
-        if (nata.equals("si")) {
+        if (nata.equalsIgnoreCase("si")) {
             System.out.println("Con nata: 2,50$.");
         }
-        if (nombre.equals("si")) {
+        if (nombre.equalsIgnoreCase("si")) {
             System.out.println("Con nombre " + nombreTarta + ": 2,75$.");
         }
         System.out.println("Total: " + (precioBase + precioNata + precioNombre) + "$.");
@@ -75,7 +75,7 @@ public class PrecioTarta {
         System.out.println("¿Desea confirmar el pedido (Y/N): ");
         String confirmaPed = entradaTec.nextLine();
 
-        if (confirmaPed.equals("Y")) {
+        if (confirmaPed.equalsIgnoreCase("Y")) {
             System.out.println("Gracias por su pedido. Su tarta estará lista pronto.");
         } else {
             System.out.println("Sentimos que no quiera confirmar el pedido. Vuelva pronto.");
