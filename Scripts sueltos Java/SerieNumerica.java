@@ -3,8 +3,10 @@ public class SerieNumerica {
     public static void main(String[] args) {
 
         System.out.println("Dada la serie numérica a = a + 3 (n -1), ¿Cuántos números de la secuencia desea imprimir (mínimo 10)? ");
-        int valor = Integer.parseInt(System.console().nextLine());
+        int valor = Integer.parseInt(System.console().readLine());
 
-        if (valor)
+        if (valor < 10) {
+            System.out.println("Valor introducido inválido. Saliendo...");
+        }
     }
 }
