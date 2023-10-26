@@ -10,12 +10,10 @@ public class TablaMulti {
     
     public static void TablaMul(int tabla) {
 
-        int total = 0;
         System.out.println("Tabla del " + tabla + ":");
 
         for (int i = 1; i <= 10; i++) {
-            total = tabla * i;
-            System.out.println(tabla + " por " + i + " es igual a " + total);
+            System.out.println(tabla + " por " + i + " es igual a " + (tabla * i));
         }
     }
 }
