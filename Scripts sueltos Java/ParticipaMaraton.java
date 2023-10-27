@@ -24,7 +24,7 @@ public class ParticipaMaraton {
                 System.out.print("Introduzca su último tiempo de finalización de maratón, en minutos (si no ha participado, introduzca el número 226): ");
                 int tiempo = scan.nextInt();
 
-                 if (tiempo > 190) {
+                if (tiempo > 190) {
                     System.out.println("Persona no seleccionada.");
                 } else {
                     System.out.println("Persona seleccionada.");
