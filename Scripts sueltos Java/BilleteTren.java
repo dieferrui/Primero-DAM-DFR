@@ -13,9 +13,14 @@ public class BilleteTren {
             tipoBillete = Integer.parseInt(System.console().readLine());
 
             switch (tipoBillete) {
-                case 1: precioBillete = 0.33d; break;
-                case 2: precioBillete = 0.26d; break;
-                default: System.out.println("Tipo de billete inválido.");
+                case 1: 
+                    precioBillete = 0.33d; 
+                    break;
+                case 2: 
+                    precioBillete = 0.26d; 
+                    break;
+                default: 
+                    System.out.println("Tipo de billete inválido.");
             }
         } while (tipoBillete != 1 && tipoBillete != 2);
 
