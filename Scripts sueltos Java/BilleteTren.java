@@ -6,6 +6,9 @@ public class BilleteTren {
         int tarjeta = 0;
         double precioViaje = 0d;
         double precioFinal = 0d;
+        final double DESC_TARJ = 0.75d;
+        final double DESC_110 = 0.90d;
+        final double DESC_50 = 0.95d;
 
         System.out.print("Introduzca la distancia (en km) entre el origen y destino: ");
         int distancia = Integer.parseInt(System.console().readLine());
@@ -32,11 +35,11 @@ public class BilleteTren {
         } while (tarjeta != 1 && tarjeta != 2);
 
         if (tarjeta == 1) {
-            precioFinal = precioViaje * 0.75;
+            precioFinal = precioViaje * DESC_TARJ;
         } else if (precioViaje >= 110) {
-            precioFinal = precioViaje * 0.90;
+            precioFinal = precioViaje * DESC_110;
         } else if (precioViaje >= 50) {
-            precioFinal = precioViaje * 0.95;
+            precioFinal = precioViaje * DESC_50;
         } else {
             precioFinal = precioViaje;
         }
