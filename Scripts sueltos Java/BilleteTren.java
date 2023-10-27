@@ -3,8 +3,8 @@ public class BilleteTren {
     public static void main(String[] args) {
 
         int tipoBillete = 0;
-        double precioViaje = 0d;
         int tarjeta = 0;
+        double precioViaje = 0d;
         double precioFinal = 0d;
 
         do {
