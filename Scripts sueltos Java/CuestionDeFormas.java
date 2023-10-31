@@ -14,7 +14,7 @@ public class CuestionDeFormas {
         System.out.print("¿Cuál es tu estatura en metros? ");
         float altura = scan.nextFloat();
 
-        float imc = Math.round( peso / Math.pow(altura, 2));
+        float imc = Math.round(peso / Math.pow(altura, 2));
 
         System.out.print("Tu IMC es: " + imc);
         scan.close();

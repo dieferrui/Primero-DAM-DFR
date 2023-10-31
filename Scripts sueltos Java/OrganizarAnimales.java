@@ -6,7 +6,7 @@ public class OrganizarAnimales {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Introduce el animal del que quieras saber el tipo (cat, dog,lion, cow, tiger)");
+        System.out.println("Introduce el animal del que quieras saber el tipo (cat, dog, lion, cow, tiger)");
         String animal = sc.nextLine();
 
         String tipo =

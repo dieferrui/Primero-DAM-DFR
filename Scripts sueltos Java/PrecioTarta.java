@@ -16,12 +16,13 @@ public class PrecioTarta {
         final String CHOCO = "chocolate";
         final String CH_BLANCO = "blanco";
         final String CH_NEGRO = "negro";
+        final String CH_LECHE = "con leche";
 
         while (true) {
             System.out.println("Escoja el sabor de su tarta: manzana, fresa o chocolate.");
-            sabor = System.console().readLine();
+            sabor = System.console().readLine().toLowerCase();
 
-            if (!FRESA.equalsIgnoreCase(sabor) && !CHOCO.equalsIgnoreCase(sabor) && !MANZA.equalsIgnoreCase(sabor)) {
+            if (!FRESA.equals(sabor) && !CHOCO.equals(sabor) && !MANZA.equals(sabor)) {
                 System.out.println("Introduzca un sabor válido.");
             } else {
                 switch (sabor) {
@@ -33,16 +34,18 @@ public class PrecioTarta {
                     break;
                 case CHOCO:
                     while (true) {
-                        System.out.println("Escoja el tipo de chocolate: blanco o negro.");
-                        choco = entradaTec.nextLine();
+                        System.out.println("Escoja el tipo de chocolate: blanco, negro o con leche.");
+                        choco = entradaTec.nextLine().toLowerCase();
 
-                        if (!CH_BLANCO.equalsIgnoreCase(choco) && !CH_NEGRO.equalsIgnoreCase(choco)) {
+                        if (!CH_BLANCO.equals(choco) && !CH_NEGRO.equals(choco) && !CH_LECHE.equals(choco)) {
                             System.out.println("Introduzca un sabor de chocolate válido.");
                         } else {
-                            if (choco.equalsIgnoreCase(CH_BLANCO)) {
+                            if (choco.equals(CH_BLANCO)) {
                                 precioBase = 15.0d;
-                            } else {
+                            } else if (choco.equals(CH_NEGRO)) {
                                 precioBase = 14.0d;
+                            } else {
+                                precioBase = 14.75d;
                             }
                             break;
                         }

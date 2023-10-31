@@ -14,7 +14,7 @@ public class BilleteTren {
         do {
             System.out.print("Introduzca la distancia (en km) entre el origen y destino: ");
             distancia = Integer.parseInt(System.console().readLine());
-        } while (distancia < 0);
+        } while (distancia <= 0);
 
         do {
             System.out.println("Introduzca su tipo de billete:\n1. Sencillo.\n2. Ida y vuelta.");

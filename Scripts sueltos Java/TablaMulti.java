@@ -2,7 +2,7 @@ public class TablaMulti {
 
     public static void main(String[] args) {
 
-        System.out.println("Introduzca qué tabla del 1 al 10 desea visualizar: ");
+        System.out.println("Introduzca qué tabla de multiplicar desea visualizar: ");
         int tabla = Integer.parseInt(System.console().readLine());
 
         TablaMul(tabla);
