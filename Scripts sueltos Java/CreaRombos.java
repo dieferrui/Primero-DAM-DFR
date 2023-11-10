@@ -3,7 +3,7 @@ public class CreaRombos {
     public static void main(String[] args) {
 
         System.out.print("Introduzca el número de líneas desde el inicio hasta la mitad del rombo: ");
-        int n = Integer.parseInt(System.console().readLine());
+        int eje = Integer.parseInt(System.console().readLine());
         
         /*
         Tal y como está declarado el rombo en el ejercicio, la línea
@@ -11,16 +11,16 @@ public class CreaRombos {
         número total de líneas.
         */
         
-        int clave = n * 2 - 1;
+        int clave = eje * 2 - 1;
 
         // Esta función construye la pirámide
 
-        for (int fil = 0; fil < n; fil++) {
+        for (int fil = 0; fil < eje; fil++) {
 
             for (int col = 1; col <= clave; col++) {
 
-                if ((col < (n - fil)) || (col > (n + fil))) {
-                    System.out.print("·");
+                if ((col < (eje - fil)) || (col > (eje + fil))) {
+                    System.out.print(" ");
                 } else {
                     System.out.print("@");
                 }
@@ -29,14 +29,14 @@ public class CreaRombos {
             System.out.println();
         }
         
-        // La siguiente función debe construir el resto del rombo
+        // La siguiente función debería construir el resto del rombo
 
-        for (int fil = (n - 2); fil >= 0; n--) {
+        for (int fil = (eje - 2); fil >= 0; fil--) {
 
-            for (int col = 1; col <= clave; col++) {
+            for (int col2 = 1; col2 <= clave; col2++) {
 
-                if ((col < (n - fil)) || (col > (n + fil))) {
-                    System.out.print("·");
+                if ((col2 < (eje - fil)) || (col2 > (eje + fil))) {
+                    System.out.print(" ");
                 } else {
                     System.out.print("@");
                 }
