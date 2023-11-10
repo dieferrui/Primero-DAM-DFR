@@ -30,7 +30,7 @@ public class Felicidades {
                 System.out.printf("Tu cumpleaños ha sido hace %l días.");
                 System.out.printf("Faltan %l días para tu cumpleaños", diasFaltan);
             } else if (fechaHoy.isBefore(fechaCum)) {
-                diasFaltan = ChronoUnits.DAYS.between(nextCum, fechaHoy);
+                diasFaltan = ChronoUnits.DAYS.between(fechaCum, fechaHoy);
                 horasFaltan = diasFaltan * 24;
                 System.out.printf("Faltan %l días, es decir, %l horas, para tu cumpleaños", diasFaltan, horasFaltan);
             } else {
