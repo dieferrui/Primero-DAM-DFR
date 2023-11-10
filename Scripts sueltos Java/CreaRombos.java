@@ -9,7 +9,7 @@ public class CreaRombos {
         Tal y como está declarado el rombo en el ejercicio, la línea
         central constará de n * 2 - 1 almohadillas, que también es el
         número total de líneas. Así, n es la posición central tanto de
-        forma horizontal como vertical, el eje del rombo.
+        forma horizontal como vertical: el eje del rombo.
         */
         
         int clave = eje * 2 - 1;
