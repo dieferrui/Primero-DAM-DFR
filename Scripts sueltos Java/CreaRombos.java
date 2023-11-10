@@ -17,9 +17,9 @@ public class CreaRombos {
 
         for (int fil = 0; fil < n; fil++) {
 
-            for (int col = 1; col < clave + 1; col++) {
+            for (int col = 1; col <= clave; col++) {
 
-                if (col < (n - fil) || col > (n + fil)) {
+                if ((col < (n - fil)) || (col > (n + fil))) {
                     System.out.print("·");
                 } else {
                     System.out.print("@");
@@ -31,15 +31,18 @@ public class CreaRombos {
         
         // La siguiente función debe construir el resto del rombo
 
-        /*
-        for (int fil = (n - 1); fil >= 1; n--) {
+        for (int fil = (n - 2); fil >= 0; n--) {
 
-            for (int col = 1; col < clave + 1; col++) {
+            for (int col = 1; col <= clave; col++) {
 
-                if (col )
+                if ((col < (n - fil)) || (col > (n + fil))) {
+                    System.out.print("·");
+                } else {
+                    System.out.print("@");
+                }
             }
+
+            System.out.println();
         }
-        */
-        
     }
 }
