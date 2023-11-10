@@ -8,7 +8,8 @@ public class CreaRombos {
         /*
         Tal y como está declarado el rombo en el ejercicio, la línea
         central constará de n * 2 - 1 almohadillas, que también es el
-        número total de líneas.
+        número total de líneas. Así, n es la posición central tanto de
+        forma horizontal como vertical, el eje del rombo.
         */
         
         int clave = eje * 2 - 1;
@@ -29,7 +30,7 @@ public class CreaRombos {
             System.out.println();
         }
         
-        // La siguiente función debería construir el resto del rombo
+        // La siguiente función construye el resto del rombo
 
         for (int fil = (eje - 2); fil >= 0; fil--) {
 
