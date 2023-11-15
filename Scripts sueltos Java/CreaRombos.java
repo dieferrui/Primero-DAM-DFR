@@ -23,7 +23,7 @@ public class CreaRombos {
                 if ((col < (eje - fil)) || (col > (eje + fil))) {
                     System.out.print(" ");
                 } else {
-                    System.out.print("@");
+                    System.out.print("#");
                 }
             }
 
@@ -39,7 +39,7 @@ public class CreaRombos {
                 if ((col2 < (eje - fil)) || (col2 > (eje + fil))) {
                     System.out.print(" ");
                 } else {
-                    System.out.print("@");
+                    System.out.print("#");
                 }
             }
 

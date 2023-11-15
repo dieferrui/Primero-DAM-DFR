@@ -21,8 +21,6 @@ public class SentenciaRuptura {
             if (k % 2 == 0 && k != 16) {
                 System.out.println(k);
                 k++;
-            } else if (k == 16) {
-                k++;
             } else if (k > 20) {
                 break;
             } else {
@@ -34,10 +32,8 @@ public class SentenciaRuptura {
 
         int l = 10;
         while(true) {
-            if (l % 2 == 0 && l != 16 && l <= 20) {
+            if (l != 16 && l <= 20) {
                 System.out.println(l);
-                l += 2;
-            } else if (l == 16) {
                 l += 2;
             } else if (l > 20) {
                 break;
