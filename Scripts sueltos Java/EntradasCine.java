@@ -31,7 +31,7 @@ public class EntradasCine {
                 elComandanteFidel = Integer.parseInt(System.console().readLine());
 
                 if (elComandanteFidel == 1) {
-                    System.out.println("El comandante le da la bienvenida, camarada. Disfrute de su 10% de descuento en la factura.");
+                    System.out.println("El comandante le da la bienvenida, camarada. Disfrute de su descuento en la factura.");
                 }
 
                 checked = true;
