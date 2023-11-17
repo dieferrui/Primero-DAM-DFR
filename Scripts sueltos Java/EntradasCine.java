@@ -10,7 +10,7 @@ public class EntradasCine {
         while (!checked) {
 
             try {
-                System.out.println("Permitame hacer algunas preguntas antes de empezar:");
+                System.out.println("Cines \"El Comandante\" le da la bienvenida a su web de compra. Permitame hacer algunas preguntas antes de empezar:");
         
                 System.out.println("Para cuantas personas quiere adquirir entradas?");
                 entradas = Integer.parseInt(System.console().readLine());
