@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "JavaApplication10",
+            "request": "launch",
+            "mainClass": "JavaApplication10",
+            "projectName": "Primero-DAM-DFR_3e4f60a9"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
