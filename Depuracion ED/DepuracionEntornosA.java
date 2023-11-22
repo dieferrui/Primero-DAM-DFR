@@ -9,7 +9,8 @@ public class DepuracionEntornosA {
         // JavaApplication12();
         // JavaApplication13();
         // JavaApplication14();
-        JavaApplication15();
+        // JavaApplication15();
+        JavaApplication16();
         
     }
 
@@ -173,5 +174,60 @@ public class DepuracionEntornosA {
         }
 
         sc.close();
+    }
+
+    public static void JavaApplication16() {
+        
+        Scanner entrada = new Scanner(System.in);
+        int numfiguras;
+
+        do {
+            System.out.print("¿Cuántas figuras quieres? ");
+            numfiguras = entrada.nextInt();
+        } while (numfiguras < 2);
+
+        int nfiguras = numfiguras;
+        int numlinea;
+
+        do {
+            System.out.print("¿Cuántos asteriscos quieres? ");
+            numlinea = entrada.nextInt();
+        } while (numlinea < 2);
+
+        int numespacios = 0;
+        int posasterisco ;
+        int nespacios;
+
+        while (numlinea > 0) {
+            
+            numfiguras = nfiguras;
+
+            while (numfiguras > 0) {
+
+                posasterisco = numlinea;
+
+                while (posasterisco-- > 0) {
+                    System.out.print("*");
+                }
+                
+                nespacios = numespacios;
+                
+                while (nespacios-- > 0) {
+                    System.out.print(" ");
+                }
+        
+                if (numfiguras > 1) {
+                    System.out.print("||");
+                }
+                
+                numfiguras = numfiguras - 1;
+            }
+
+            System.out.println("");
+            numlinea = numlinea - 1;
+            numespacios = numespacios + 1;
+        }
+
+        entrada.close();
     }
 }
