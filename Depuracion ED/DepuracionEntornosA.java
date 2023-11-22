@@ -7,7 +7,9 @@ public class DepuracionEntornosA {
         // JavaApplication10();
         // JavaApplication11();
         // JavaApplication12();
-        JavaApplication13();
+        // JavaApplication13();
+        // JavaApplication14();
+        JavaApplication15();
         
     }
 
@@ -80,13 +82,94 @@ public class DepuracionEntornosA {
         
         for (j = 2; j < N; j++) { 
             i = 2; 
-            while (j % i == 0) {
+            while (j % i != 0) {
                 i++;
             }
             
-            if (i != j) { 
+            if (i == j) { 
                 System.out.println(j);
             }
+        }
+
+        sc.close();
+    }
+
+    public static void JavaApplication14() {
+        
+        Scanner sc = new Scanner(System.in);
+        int i;
+        int pos = 0, neg = 0; 
+        int[] numeros = new int[10]; 
+        double sumaPos = 0, sumaNeg = 0; 
+            
+        System.out.println("Lectura de los elementos del array: ");
+        
+        for (i = 0; i < 10; i++) {
+            System.out.print("numeros[" + i + "]= ");
+            numeros[i] = sc.nextInt();
+        }
+        
+        for (i = 0; i < 10; i++) {
+            if (numeros[i] > 0) {
+                sumaPos += numeros[i];
+                pos++;
+            } else if (numeros[i] < 0) { 
+                sumaNeg += numeros[i];
+                neg++;
+            }
+        }
+
+        //Calcular y mostrar las medias
+        if (pos != 0) {
+            System.out.println("Media de los valores positivos: " + sumaPos / pos); 
+        } else {
+            System.out.println("No ha introducido numeros positivos");
+        }
+
+        if (neg != 0) {
+            System.out.println("Media de los valores negativos: " + sumaNeg / neg);
+        } else {
+            System.out.println("No ha introducido numeros negativos");
+        }
+
+        sc.close();
+    }
+
+    public static void JavaApplication15() {
+        
+        Scanner sc = new Scanner(System.in);
+        int N, aux, cifra, numeroCifras = 0;
+        double suma;
+        
+        do {
+            System.out.print("Introduce número entero positivo: ");
+            N = sc.nextInt();
+            
+            if (N <= 0) {
+                System.out.println("Error. Debe ser un número positivo");
+            }
+        } while (N <= 0); 
+        
+        aux = N;
+
+        while (aux != 0) {
+            numeroCifras++;
+            aux = aux / 10;
+        }
+
+        suma = 0; 
+        aux = N;
+
+        while (aux != 0) { 
+            cifra = aux % 10; 
+            suma += Math.pow(cifra, numeroCifras); 
+            aux = aux / 10; 
+        }
+
+        if (suma != N) { 
+            System.out.println("No es narcisista");
+        } else {
+            System.out.println("Es narcisista");
         }
 
         sc.close();
