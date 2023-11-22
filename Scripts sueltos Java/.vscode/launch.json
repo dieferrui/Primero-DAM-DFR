@@ -1,0 +1,231 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "AdiosMundo",
+            "request": "launch",
+            "mainClass": "AdiosMundo",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "BilleteTren",
+            "request": "launch",
+            "mainClass": "BilleteTren",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "BuscaLetra",
+            "request": "launch",
+            "mainClass": "BuscaLetra",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "CalcSimple",
+            "request": "launch",
+            "mainClass": "CalcSimple",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "CalculoImc",
+            "request": "launch",
+            "mainClass": "CalculoImc",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "CelsiusKelvin",
+            "request": "launch",
+            "mainClass": "CelsiusKelvin",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "CreaRombos",
+            "request": "launch",
+            "mainClass": "CreaRombos",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "CuestionDeFormas",
+            "request": "launch",
+            "mainClass": "CuestionDeFormas",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "DiasDelMes",
+            "request": "launch",
+            "mainClass": "DiasDelMes",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "EjParse2",
+            "request": "launch",
+            "mainClass": "EjParse2",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "EjerDepuracion",
+            "request": "launch",
+            "mainClass": "EjerDepuracion",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "EjerciciosParse",
+            "request": "launch",
+            "mainClass": "EjerciciosParse",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "Felicidades",
+            "request": "launch",
+            "mainClass": "Felicidades",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "HolaMundo",
+            "request": "launch",
+            "mainClass": "HolaMundo",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "HorasPagadas",
+            "request": "launch",
+            "mainClass": "HorasPagadas",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "MayorDos",
+            "request": "launch",
+            "mainClass": "MayorDos",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "MayorEdad",
+            "request": "launch",
+            "mainClass": "MayorEdad",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "MayorMenorTres",
+            "request": "launch",
+            "mainClass": "MayorMenorTres",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "OrganizarAnimales",
+            "request": "launch",
+            "mainClass": "OrganizarAnimales",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "ParticipaMaraton",
+            "request": "launch",
+            "mainClass": "ParticipaMaraton",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "PrecioTarta",
+            "request": "launch",
+            "mainClass": "PrecioTarta",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "RandomNormal",
+            "request": "launch",
+            "mainClass": "RandomNormal",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "RestoCociente",
+            "request": "launch",
+            "mainClass": "RestoCociente",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "SentenciaRuptura",
+            "request": "launch",
+            "mainClass": "SentenciaRuptura",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "SerieNumerica",
+            "request": "launch",
+            "mainClass": "SerieNumerica",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "SumaDos",
+            "request": "launch",
+            "mainClass": "SumaDos",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "SumaEntero",
+            "request": "launch",
+            "mainClass": "SumaEntero",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "SwitchMes",
+            "request": "launch",
+            "mainClass": "SwitchMes",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "TablaMulti",
+            "request": "launch",
+            "mainClass": "TablaMulti",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "TiposDatos",
+            "request": "launch",
+            "mainClass": "TiposDatos",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "VolumenCono",
+            "request": "launch",
+            "mainClass": "VolumenCono",
+            "projectName": "Scripts sueltos Java_83d36371"
+        }
+    ]
+}
