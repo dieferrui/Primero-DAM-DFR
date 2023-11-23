@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+    <html lang="es">
+
+        <head>
+            <!-- Las etiquetas comentadas son opcionales o irrelevantes -->
+            <!--<base href="" target="_blank"/>-->
+            <title>Contacto Submarinismo</title>
+            <meta charset="UTF-8"/>
+            <meta author="Diego Fernández"/>
+            <meta description="Contacto de la página Moo submarinismo"/>
+            <meta name="keywords"
+                content="Moo, submarinismo, España, Valencia, contacto"/>
+            <!--<meta http-equiv="refresh" content=""/>-->
+            <link rel="icon" type="image/x-icon" href="vaca.ico">
+            <link rel="stylesheet" type="text/css" href="stile1.css">
+            <noscript>
+                <b>Necesitas tener los scripts activados para visualizar correctamente la página.</b>
+            </noscript>
+        </head>
+
+        <body>
+            <header>
+                <table>
+                    <tr><td><h1>Contacta con Moo</h1></td><td><img src="MooScuba.png" alt="Moo in Scuba gear"></td></tr>
+                </table>
+            </header>
+
+            <img src="Acuario.png" alt="Peces flotando en el fondo" style="width:100%">
+
+            <h2><ul>
+                <li><a href="indice.html">Índice</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul></h2>
+
+            <h2>Formulario de contacto</h2>
+            <form action="formulario_contacto.php" method="post">
+                <fieldset>
+                    <legend>Datos de Login</legend>
+                    <label for="e-mail">Email</label><br/>
+                        <input type="text" name="e-mail" value="" placeholder="email@empresa.com" /><br/>
+                    <label for="contrasena">Contraseña</label><br/>
+                        <input type="password" name="contrasena" maxlength="4" placeholder="introduce 4 dígitos" /><br/>
+                </fieldset>
+                <fieldset>
+                    <legend>Información extra</legend>
+                    Profundidad
+                        <select id="prof" name="prof">
+                            <option value="15" selected="selected">15m</option>
+                            <option value="20">20m</option>
+                            <option value="25">25m</option>
+                        </select><br>
+                        <label><input type="checkbox" id="amogus" value="suscripción">
+                            Deseo suscribirme para recibir información de la página</label>
+                        <table>
+                            <tr>
+                                <td><input type="radio" name="acepto" value="si" checked="checked" /> Acepto las condiciones propuestas </td><br/>
+                                <td><input type="radio" name="acepto" value="no" /> NO acepto las condiciones propuestas </td><br/>
+                            </tr>
+                        </table>
+                </fieldset>
+                <input type="button" name="mandar" value="Mandar Formulario" />
+                <input type="reset" name="borrar" value="Borrar formulario" />
+            </form>
+
+            <h4>Suscríbete a mis redes sociales</h4>
+            <table>
+                <tr>
+                    <td><a href="https://www.instagram.com" target="_blank"><img src="instagram.png" alt="Moo in Scuba gear" style="height:40px" style="width:40px"></a></td>
+                    <td><a href="https://www.facebook.com" target="_blank"><img src="facebook.png" alt="Moo in Scuba gear" style="height:40px" style="width:40px"></a></td>
+                    <td><a href="https://www.twitter.com" target="_blank"><img src="twitter.png" alt="Moo in Scuba gear" style="height:40px" style="width:40px"></a></td>
+                </tr>
+            </table>
+
+            <footer>Aviso Legal&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Política de privacidad</footer>
+        </body>
+    </html>
