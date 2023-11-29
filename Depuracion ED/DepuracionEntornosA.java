@@ -4,18 +4,18 @@ public class DepuracionEntornosA {
 
     public static void main(String[] args) {
         
-        // JavaApplication10();
-        // JavaApplication11();
-        // JavaApplication12();
-        // JavaApplication13();
-        // JavaApplication14();
-        // JavaApplication15();
-        // JavaApplication16();
-        // JavaApplication17();
-        // JavaApplication18();
-        // JavaApplication19();
-        // JavaApplication20();
-        // JavaApplication21();
+        JavaApplication10();
+        JavaApplication11();
+        JavaApplication12();
+        JavaApplication13();
+        JavaApplication14();
+        JavaApplication15();
+        JavaApplication16();
+        JavaApplication17();
+        JavaApplication18();
+        JavaApplication19();
+        JavaApplication20();
+        JavaApplication21();
         JavaApplication22();
         
     }
