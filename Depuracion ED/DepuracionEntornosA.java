@@ -4,23 +4,23 @@ public class DepuracionEntornosA {
 
     public static void main(String[] args) {
         
-        JavaApplication10();
-        JavaApplication11();
-        JavaApplication12();
-        JavaApplication13();
-        JavaApplication14();
-        JavaApplication15();
-        JavaApplication16();
-        JavaApplication17();
-        JavaApplication18();
-        JavaApplication19();
-        JavaApplication20();
-        JavaApplication21();
-        JavaApplication22();
+        AreaRadioCircun();
+        Mira3Cifras();
+        NumPerfecto();
+        PrimosHastaN();
+        MediasDeNumerosPosNeg();
+        NumeroNarcisista();
+        TriangulosMultiples();
+        NumerosACifras();
+        ComprobarUltimo();
+        FactorialDe();
+        NumerosAmigos();
+        MediaAlturas();
+        Num99999E();
         
     }
 
-    public static void JavaApplication10() {
+    public static void AreaRadioCircun() {
         
         Scanner sa;
         sa = new Scanner(System.in);
@@ -38,7 +38,7 @@ public class DepuracionEntornosA {
         sa.close();
     }
 
-    public static void JavaApplication11() {
+    public static void Mira3Cifras() {
         
         Scanner sb = new Scanner(System.in);
         int N;
@@ -52,7 +52,7 @@ public class DepuracionEntornosA {
         sb.close();
     }
 
-    public static void JavaApplication12() {
+    public static void NumPerfecto() {
         
         int i, suma = 0, n;
         Scanner sc = new Scanner(System.in);
@@ -75,7 +75,7 @@ public class DepuracionEntornosA {
         sc.close();
     }
 
-    public static void JavaApplication13() {
+    public static void PrimosHastaN() {
         
         int N, i, j;
         Scanner sd = new Scanner(System.in);
@@ -101,7 +101,7 @@ public class DepuracionEntornosA {
         sd.close();
     }
 
-    public static void JavaApplication14() {
+    public static void MediasDeNumerosPosNeg() {
         
         Scanner se = new Scanner(System.in);
         int i;
@@ -142,7 +142,7 @@ public class DepuracionEntornosA {
         se.close();
     }
 
-    public static void JavaApplication15() {
+    public static void NumeroNarcisista() {
         
         Scanner sf = new Scanner(System.in);
         int N, aux, cifra, numeroCifras = 0;
@@ -182,7 +182,7 @@ public class DepuracionEntornosA {
         sf.close();
     }
 
-    public static void JavaApplication16() {
+    public static void TriangulosMultiples() {
         
         Scanner entrada = new Scanner(System.in);
         int numfiguras;
@@ -237,7 +237,7 @@ public class DepuracionEntornosA {
         entrada.close();
     }
 
-    public static void JavaApplication17() {
+    public static void NumerosACifras() {
         
         int num, i, aux, cont, cifra;
         Scanner sg = new Scanner(System.in);
@@ -308,7 +308,7 @@ public class DepuracionEntornosA {
         sg.close();
     }
 
-    public static void JavaApplication18() {
+    public static void ComprobarUltimo() {
         
         Scanner sh = new Scanner(System.in);
         int n1, n2;
@@ -328,7 +328,7 @@ public class DepuracionEntornosA {
 
     }
 
-    public static void JavaApplication19() {
+    public static void FactorialDe() {
         int N;
         double factorial;
         Scanner si = new Scanner(System.in);
@@ -351,7 +351,7 @@ public class DepuracionEntornosA {
         si.close();
     }
 
-    public static void JavaApplication20() {
+    public static void NumerosAmigos() {
         
         int i, suma = 0, n1, n2;
         Scanner sj = new Scanner(System.in);
@@ -388,7 +388,7 @@ public class DepuracionEntornosA {
         sj.close();
     }
 
-    public static void JavaApplication21() {
+    public static void MediaAlturas() {
         
         Scanner sk = new Scanner(System.in);
         int i, N;
@@ -426,7 +426,7 @@ public class DepuracionEntornosA {
         sk.close();
     }
 
-    public static void JavaApplication22() {
+    public static void Num99999E() {
         
         for (int i = 0; i <= 9; i++) {
             for (int j = 0; j <= 9; j++) {
