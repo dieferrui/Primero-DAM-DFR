@@ -22,12 +22,12 @@ public class DepuracionEntornosA {
 
     public static void JavaApplication10() {
         
-        Scanner sc;
-        sc = new Scanner(System.in);
+        Scanner sa;
+        sa = new Scanner(System.in);
         double radio, longitud, area;
         
         System.out.println("Introduce radio de la circunferencia:");
-        radio = sc.nextDouble();
+        radio = sa.nextDouble();
         
         longitud = 2 * Math.PI * radio;
         area = Math.PI * Math.pow(radio, 2);
@@ -35,21 +35,21 @@ public class DepuracionEntornosA {
         System.out.println("Longitud de la circunferencia -> " + longitud); 
         System.out.println("Area de la circunferencia -> " + area);
         
-        sc.close();
+        sa.close();
     }
 
     public static void JavaApplication11() {
         
-        Scanner sc = new Scanner(System.in);
+        Scanner sb = new Scanner(System.in);
         int N;
         System.out.print("Introduzca valor de N: ");
-        N = sc.nextInt();
+        N = sb.nextInt();
         
         System.out.println("Primera cifra de " + N + " -> " + (N / 100));
         System.out.println("Cifra central de " + N + " -> " + ((N % 100) / 10));
         System.out.println("Última cifra de " + N + " -> " + (N % 10));
 
-        sc.close();
+        sb.close();
     }
 
     public static void JavaApplication12() {
@@ -78,11 +78,11 @@ public class DepuracionEntornosA {
     public static void JavaApplication13() {
         
         int N, i, j;
-        Scanner sc = new Scanner(System.in);
+        Scanner sd = new Scanner(System.in);
         
         do {
             System.out.print("Introduce un numero > 0: ");
-            N = sc.nextInt();
+            N = sd.nextInt();
         } while (N <= 0);
         
         System.out.println("Números primos desde 2 hasta " + N);
@@ -98,12 +98,12 @@ public class DepuracionEntornosA {
             }
         }
 
-        sc.close();
+        sd.close();
     }
 
     public static void JavaApplication14() {
         
-        Scanner sc = new Scanner(System.in);
+        Scanner se = new Scanner(System.in);
         int i;
         int pos = 0, neg = 0; 
         int[] numeros = new int[10]; 
@@ -113,7 +113,7 @@ public class DepuracionEntornosA {
         
         for (i = 0; i < 10; i++) {
             System.out.print("numeros[" + i + "]= ");
-            numeros[i] = sc.nextInt();
+            numeros[i] = se.nextInt();
         }
         
         for (i = 0; i < 10; i++) {
@@ -139,18 +139,18 @@ public class DepuracionEntornosA {
             System.out.println("No ha introducido numeros negativos");
         }
 
-        sc.close();
+        se.close();
     }
 
     public static void JavaApplication15() {
         
-        Scanner sc = new Scanner(System.in);
+        Scanner sf = new Scanner(System.in);
         int N, aux, cifra, numeroCifras = 0;
         double suma;
         
         do {
             System.out.print("Introduce número entero positivo: ");
-            N = sc.nextInt();
+            N = sf.nextInt();
             
             if (N <= 0) {
                 System.out.println("Error. Debe ser un número positivo");
@@ -179,7 +179,7 @@ public class DepuracionEntornosA {
             System.out.println("Es narcisista");
         }
 
-        sc.close();
+        sf.close();
     }
 
     public static void JavaApplication16() {
@@ -240,11 +240,11 @@ public class DepuracionEntornosA {
     public static void JavaApplication17() {
         
         int num, i, aux, cont, cifra;
-        Scanner sc = new Scanner(System.in);
+        Scanner sg = new Scanner(System.in);
 
         do {
             System.out.print("Introduce numero entero positivo: ");
-            num = sc.nextInt();
+            num = sg.nextInt();
             if (num <= 0) {
                 System.out.println("Numero no valido.");
             }
@@ -305,18 +305,18 @@ public class DepuracionEntornosA {
         
         System.out.println();
         System.out.println("Fin de programa");
-        sc.close();
+        sg.close();
     }
 
     public static void JavaApplication18() {
         
-        Scanner sc = new Scanner(System.in);
+        Scanner sh = new Scanner(System.in);
         int n1, n2;
 
         System.out.print("Introduzca primer número: ");
-        n1 = sc.nextInt();
+        n1 = sh.nextInt();
         System.out.print("Introduzca segundo número: ");
-        n2 = sc.nextInt();
+        n2 = sh.nextInt();
 
         if (n1 % 10 != n2 % 10) {
             System.out.println("Los números acaban con cifras distintas");
@@ -324,18 +324,18 @@ public class DepuracionEntornosA {
             System.out.println("Los dos números acaban con la misma cifra");
         }
 
-        sc.close();
+        sh.close();
 
     }
 
     public static void JavaApplication19() {
         int N;
         double factorial;
-        Scanner sc = new Scanner(System.in);
+        Scanner si = new Scanner(System.in);
 
         do {
             System.out.print("Introduce un número > 0: ");
-            N = sc.nextInt();
+            N = si.nextInt();
         } while (N < 0);
 
         for (int i = 0; i <= N ; i++) {
@@ -348,18 +348,18 @@ public class DepuracionEntornosA {
             System.out.printf("%2d! = %.0f %n", i, factorial);
         }
 
-        sc.close();
+        si.close();
     }
 
     public static void JavaApplication20() {
         
         int i, suma = 0, n1, n2;
-        Scanner sc = new Scanner(System.in);
+        Scanner sj = new Scanner(System.in);
 
         System.out.print("Introduce primer número: ");
-        n1 = sc.nextInt();
+        n1 = sj.nextInt();
         System.out.print("Introduce segundo número: ");
-        n2 = sc.nextInt();
+        n2 = sj.nextInt();
 
         for (i = 1; i < n1; i++) {
             if (n1 % i == 0) {
@@ -385,19 +385,19 @@ public class DepuracionEntornosA {
             System.out.println("No son amigos");
         }
 
-        sc.close();
+        sj.close();
     }
 
     public static void JavaApplication21() {
         
-        Scanner sc = new Scanner(System.in);
+        Scanner sk = new Scanner(System.in);
         int i, N;
         int contMas = 0, contMenos = 0;
         double media = 0;
 
         do {
             System.out.print("Número de personas: ");
-            N = sc.nextInt();
+            N = sk.nextInt();
         } while (N <= 0);
 
         double[] alto = new double[N];
@@ -405,7 +405,7 @@ public class DepuracionEntornosA {
         System.out.println("Lectura de la altura de las personas: ");
         for (i = 0; i < N; i++) {
             System.out.print("Persona " + (i + 1) + " = ");
-            alto[i] = sc.nextDouble();
+            alto[i] = sk.nextDouble();
             media = media + alto[i];
         }
         
@@ -423,7 +423,7 @@ public class DepuracionEntornosA {
         System.out.println("Personas con estatura superior a la media: " + contMas);
         System.out.println("Personas con estatura inferior a la media: " + contMenos);
 
-        sc.close();
+        sk.close();
     }
 
     public static void JavaApplication22() {
