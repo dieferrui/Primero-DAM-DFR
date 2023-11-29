@@ -4,6 +4,13 @@ public class DepuracionEntornosA {
 
     public static void main(String[] args) {
         
+        /* 
+        A continuación se expresan los diferentes métodos
+        que puede ejecutar el programa. Retire sólo uno de
+        los comentarios a la vez para el correcto funcionamiento
+        del programa.
+        */
+
         // AreaRadioCircun();
         // Mira3Cifras();
         // NumPerfecto();
