@@ -4,19 +4,19 @@ public class DepuracionEntornosA {
 
     public static void main(String[] args) {
         
-        AreaRadioCircun();
-        Mira3Cifras();
-        NumPerfecto();
-        PrimosHastaN();
-        MediasDeNumerosPosNeg();
-        NumeroNarcisista();
-        TriangulosMultiples();
-        NumerosACifras();
-        ComprobarUltimo();
-        FactorialDe();
-        NumerosAmigos();
-        MediaAlturas();
-        Num99999E();
+        // AreaRadioCircun();
+        // Mira3Cifras();
+        // NumPerfecto();
+        // PrimosHastaN();
+        // MediasDeNumerosPosNeg();
+        // NumeroNarcisista();
+        // TriangulosMultiples();
+        // NumerosACifras();
+        // ComprobarUltimo();
+        // FactorialDe();
+        // NumerosAmigos();
+        // MediaAlturas();
+        // Num99999E();
         
     }
 
