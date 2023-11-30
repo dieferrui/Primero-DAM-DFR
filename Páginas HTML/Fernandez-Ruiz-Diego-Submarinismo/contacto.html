@@ -36,10 +36,10 @@
                 <form action="formulario_contacto.php" method="post" enctype="text/plain">
                     <fieldset>
                         <legend>Datos de Login</legend>
-                        <label for="e-mail">Email</label><br/>
-                            <input type="text" name="e-mail" value="" placeholder="email@empresa.com" /><br/>
+                        <label for="email">Email</label><br>
+                            <input type="text" name="email" value="" placeholder="email@empresa.com" /><br>
                         <label for="contrasena">Contraseña</label><br/>
-                            <input type="password" name="contrasena" maxlength="4" placeholder="introduce 4 dígitos" /><br/>
+                            <input type="password" name="contrasena" maxlength="4" placeholder="introduce 4 dígitos" /><br>
                     </fieldset>
                     <fieldset>
                         <legend>Información extra</legend>
@@ -49,12 +49,12 @@
                                 <option value="20">20m</option>
                                 <option value="25">25m</option>
                             </select><br>
-                            <label for="amogus">Deseo suscribirme para recibir información de la página</label>
-                                <input type="checkbox" id="amogus" value="suscripción">
-                            <label for="acepto">Acepto las condiciones propuestas</label>
-                                <input type="radio" name="acepto" value="si" checked="checked" /><br/>
-                            <label for="noacepto">NO acepto las condiciones propuestas</label>
-                                <input type="radio" name="noacepto" value="no" /><br/>
+                            <input type="checkbox" id="amogus" value="suscripción">
+                            <label for="amogus">Deseo suscribirme para recibir información de la página</label><br>
+                            <input type="radio" name="acepto" value="si" checked="checked" />
+                            <label for="acepto">Acepto las condiciones propuestas</label><br>
+                            <input type="radio" name="acepto" value="no" /> 
+                            <label for="acepto">NO acepto las condiciones propuestas</label><br>  
                     </fieldset>
                     <input type="submit" name="mandar" value="Mandar Formulario" />
                     <input type="reset" name="borrar" value="Borrar formulario" />
