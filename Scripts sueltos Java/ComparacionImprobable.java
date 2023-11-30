@@ -4,13 +4,18 @@ public class ComparacionImprobable {
 
     public static void main(String[] args) {
 
-        // Inícialo, si te atreves
-
         boolean sonIguales;
+        int contador = 0;
 
         do {
-            double notRandy = Math.random() * 10 + 2;
+
+            // Genera las líneas y columnas de los arrays entre 2 y 9
+
+            double notRandy = Math.max(2, Math.random() * 10);
             int randy = (int)notRandy;
+
+            
+            // Declara, genera y pinta array 1
 
             int[][] arrayNum = new int[randy][];
 
@@ -36,6 +41,10 @@ public class ComparacionImprobable {
             }
 
             System.out.println();
+
+            
+            // Declara, genera y pinta array 2
+
             int[][] arrayNum2 = new int[randy][];
 
             for (int m = 0; m < randy; m++) {
@@ -60,11 +69,20 @@ public class ComparacionImprobable {
             }
             System.out.println();
 
+
+            // Compara los arrays y reinicia el bucle si no son iguales
+
             sonIguales = Arrays.deepEquals(arrayNum, arrayNum2);
             System.out.println(sonIguales);
+            contador++;
             System.out.println();
             System.out.println();
 
         } while (!sonIguales);
+
+
+        // Cuenta el número de veces que se ha realizado el bucle
+
+        System.out.printf("Intentos realizados: %d.", contador);
     }
 }
