@@ -6,6 +6,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ComparacionImprobable",
+            "request": "launch",
+            "mainClass": "ComparacionImprobable",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "ArrayMultiSuma",
+            "request": "launch",
+            "mainClass": "ArrayMultiSuma",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "RecorridoDobleArray",
+            "request": "launch",
+            "mainClass": "RecorridoDobleArray",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "OrdenaArrayAlfa",
+            "request": "launch",
+            "mainClass": "OrdenaArrayAlfa",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "MaximoDeArray",
+            "request": "launch",
+            "mainClass": "MaximoDeArray",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "SumaArrayInt",
+            "request": "launch",
+            "mainClass": "SumaArrayInt",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
+            "name": "InvertirArray",
+            "request": "launch",
+            "mainClass": "InvertirArray",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"

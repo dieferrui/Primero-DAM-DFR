@@ -21,57 +21,57 @@
 
         <body>
             <header>
-                <table>
-                    <tr><td><h1>Contacta con Moo</h1></td><td><img src="MooScuba.png" alt="Moo in Scuba gear"></td></tr>
-                </table>
+                <h1>Moo se vuelve submarinista<img src="MooScuba.png" alt="Moo in Scuba gear" title="Este es Moo"></h1></tr>
+                <img src="Acuario.png" alt="Peces flotando en el fondo" style="width:100%">
+                <nav>
+                    <ul>
+                        <li><h3><a href="indice.html">Índice</a></h3></li>
+                        <li><h3><a href="contacto.html">Contacto</a></h3></li>
+                    </ul>
+                </nav>
             </header>
 
-            <img src="Acuario.png" alt="Peces flotando en el fondo" style="width:100%">
+            <section>
+                <h2>Formulario de contacto</h2>
+                <form action="formulario_contacto.php" method="post" enctype="text/plain">
+                    <fieldset>
+                        <legend>Datos de Login</legend>
+                        <label for="e-mail">Email</label><br/>
+                            <input type="text" name="e-mail" value="" placeholder="email@empresa.com" /><br/>
+                        <label for="contrasena">Contraseña</label><br/>
+                            <input type="password" name="contrasena" maxlength="4" placeholder="introduce 4 dígitos" /><br/>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Información extra</legend>
+                        <label for="prof">Profundidad</label>
+                            <select id="prof" name="prof">
+                                <option value="15" selected="selected">15m</option>
+                                <option value="20">20m</option>
+                                <option value="25">25m</option>
+                            </select><br>
+                            <label for="amogus">Deseo suscribirme para recibir información de la página</label>
+                                <input type="checkbox" id="amogus" value="suscripción">
+                            <label for="acepto">Acepto las condiciones propuestas</label>
+                                <input type="radio" name="acepto" value="si" checked="checked" /><br/>
+                            <label for="noacepto">NO acepto las condiciones propuestas</label>
+                                <input type="radio" name="noacepto" value="no" /><br/>
+                    </fieldset>
+                    <input type="submit" name="mandar" value="Mandar Formulario" />
+                    <input type="reset" name="borrar" value="Borrar formulario" />
+                </form>
+            </section>
 
-            <h2><ul>
-                <li><a href="indice.html">Índice</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul></h2>
-
-            <h2>Formulario de contacto</h2>
-            <form action="formulario_contacto.php" method="post">
-                <fieldset>
-                    <legend>Datos de Login</legend>
-                    <label for="e-mail">Email</label><br/>
-                        <input type="text" name="e-mail" value="" placeholder="email@empresa.com" /><br/>
-                    <label for="contrasena">Contraseña</label><br/>
-                        <input type="password" name="contrasena" maxlength="4" placeholder="introduce 4 dígitos" /><br/>
-                </fieldset>
-                <fieldset>
-                    <legend>Información extra</legend>
-                    Profundidad
-                        <select id="prof" name="prof">
-                            <option value="15" selected="selected">15m</option>
-                            <option value="20">20m</option>
-                            <option value="25">25m</option>
-                        </select><br>
-                        <label><input type="checkbox" id="amogus" value="suscripción">
-                            Deseo suscribirme para recibir información de la página</label>
-                        <table>
-                            <tr>
-                                <td><input type="radio" name="acepto" value="si" checked="checked" /> Acepto las condiciones propuestas </td><br/>
-                                <td><input type="radio" name="acepto" value="no" /> NO acepto las condiciones propuestas </td><br/>
-                            </tr>
-                        </table>
-                </fieldset>
-                <input type="button" name="mandar" value="Mandar Formulario" />
-                <input type="reset" name="borrar" value="Borrar formulario" />
-            </form>
-
-            <h4>Suscríbete a mis redes sociales</h4>
-            <table>
-                <tr>
-                    <td><a href="https://www.instagram.com" target="_blank"><img src="instagram.png" alt="enlace a instagram" style="height:40px" style="width:40px"></a></td>
-                    <td><a href="https://www.facebook.com" target="_blank"><img src="facebook.png" alt="enlace a facebook" style="height:40px" style="width:40px"></a></td>
-                    <td><a href="https://www.twitter.com" target="_blank"><img src="twitter.png" alt="enlace a twitter" style="height:40px" style="width:40px"></a></td>
-                </tr>
-            </table>
-
-            <footer>Aviso Legal&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Política de privacidad</footer>
+            <footer>
+                <h4>Suscríbete a mis redes sociales<br>
+                        <a href="https://www.instagram.com" target="_blank"><img src="instagram.png" alt="enlace a instagram" style="height:40px" style="width:40px"></a>
+                        <a href="https://www.facebook.com" target="_blank"><img src="facebook.png" alt="enlace a facebook" style="height:40px" style="width:40px"></a>
+                        <a href="https://www.twitter.com" target="_blank"><img src="twitter.png" alt="enlace a twitter" style="height:40px" style="width:40px"></a>
+                </h4>
+                <p>O manda un correo electrónico
+                    <a href="mailto:moo@MooSubmarinista.com?subject=Solicitud%20de&20información%20submarinismo" target="_top">Pincha aquí!</a>
+                </p>
+                <p>Aviso Legal&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Política de privacidad
+                </p>
+            </footer>
         </body>
     </html>
