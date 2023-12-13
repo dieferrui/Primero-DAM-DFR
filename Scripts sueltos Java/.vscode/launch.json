@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Agenda",
+            "request": "launch",
+            "mainClass": "Agenda",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
             "name": "ComparacionImprobable",
             "request": "launch",
             "mainClass": "ComparacionImprobable",
