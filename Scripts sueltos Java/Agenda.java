@@ -9,7 +9,6 @@ public class Agenda {
         Scanner sc = new Scanner(System.in);
         int numPers = 0;
 
-
         System.out.println("Introduzca el número de personas que desea añadir a la agenda: ");
         numPers = sc.nextInt();
 
