@@ -5,16 +5,27 @@ import java.awt.event.ActionListener;
 
 public class VentanaSaludo extends JFrame {
 
+    private DefaultComboBoxModel<String> nombresModel;
+    private JComboBox<String> comboBox;
+
     public VentanaSaludo() {
         // Configuración de la ventana
         setTitle("Saluda!");
-        setSize(500, 150);
+        setSize(700, 300);
         setResizable(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        // Configuración del panel
-        JPanel panel = new JPanel();
-        panel.setLayout(new FlowLayout());
+        // Configuración del panel principal
+        JPanel panelPrincipal = new JPanel();
+        panelPrincipal.setLayout(new GridLayout(2, 1));
+
+        // Configuración del panel superior
+        JPanel panelSuperior = new JPanel();
+        panelSuperior.setLayout(new FlowLayout());
+
+        // Configuración del panel inferior
+        JPanel panelInferior = new JPanel();
+        panelInferior.setLayout(new FlowLayout());
 
         // Etiqueta y campo de texto
         JLabel etiquetaNombre = new JLabel("Nombre: ");
@@ -25,18 +36,56 @@ public class VentanaSaludo extends JFrame {
         botonSaludar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String nombre = campoNombre.getText();
-                JOptionPane.showMessageDialog(VentanaSaludo.this, "¡Hola, " + nombre + "!", "Saludo", JOptionPane.INFORMATION_MESSAGE);
+                String nombreSeleccionado = (String) comboBox.getSelectedItem();
+
+                if (nombreSeleccionado != null) {
+                    JOptionPane.showMessageDialog(VentanaSaludo.this, "¡Hola, " + nombreSeleccionado + "!", "Saludo", JOptionPane.PLAIN_MESSAGE);
+                } else {
+                    JOptionPane.showMessageDialog(VentanaSaludo.this, "Introduce un nombre primero.", "Error", JOptionPane.ERROR_MESSAGE);
+                }
             }
         });
 
-        // Agregar componentes al panel
-        panel.add(etiquetaNombre);
-        panel.add(campoNombre);
-        panel.add(botonSaludar);
+        // Botón para añadir nombres al comboBox
+        JButton botonAgregarNombre = new JButton("Añadir");
+        botonAgregarNombre.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String nuevoNombre = campoNombre.getText();
 
-        // Agregar panel a la ventana
-        add(panel);
+                if (!nuevoNombre.isEmpty()) {
+                    nombresModel.addElement(nuevoNombre);
+                    campoNombre.setText("");
+                    JOptionPane.showMessageDialog(VentanaSaludo.this, "Se ha añadido el nombre: " + nuevoNombre, "Nombre Añadido", JOptionPane.PLAIN_MESSAGE);
+                } else {
+                    JOptionPane.showMessageDialog(VentanaSaludo.this, "Por favor, ingresa un nombre válido.", "Error", JOptionPane.ERROR_MESSAGE);
+                }
+            }
+        });
+
+        // ComboBox para los nombres
+        nombresModel = new DefaultComboBoxModel<>();
+        comboBox = new JComboBox<>(nombresModel);
+        comboBox.setPreferredSize(new Dimension(120, 25));
+
+        // Agregar componentes al panel superior
+        panelSuperior.add(etiquetaNombre);
+        panelSuperior.add(campoNombre);
+        panelSuperior.add(comboBox);
+
+        // Agregar componentes al panel inferior
+        panelInferior.add(botonAgregarNombre);
+        panelInferior.add(botonSaludar);
+
+        // Agregar paneles al principal
+        panelPrincipal.add(panelSuperior);
+        panelPrincipal.add(panelInferior);
+
+        // Agregar panel principal a la ventana
+        add(panelPrincipal);
+
+        //Centrar ventana y elementos
+        setLocationRelativeTo(null);
 
         // Hacer visible la ventana
         setVisible(true);
