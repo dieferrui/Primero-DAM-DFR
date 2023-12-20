@@ -84,7 +84,7 @@ public class VentanaSaludo extends JFrame {
         // Agregar panel principal a la ventana
         add(panelPrincipal);
 
-        //Centrar ventana y elementos
+        //Centrar ventana
         setLocationRelativeTo(null);
 
         // Hacer visible la ventana
