@@ -8,7 +8,7 @@ public class VentanaSaludo extends JFrame {
     public VentanaSaludo() {
         // Configuración de la ventana
         setTitle("Saluda!");
-        setSize(500, 120);
+        setSize(500, 150);
         setResizable(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
