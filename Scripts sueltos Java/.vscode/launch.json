@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "DatosEstudiante",
+            "request": "launch",
+            "mainClass": "DatosEstudiante",
+            "projectName": "Scripts sueltos Java_83d36371"
+        },
+        {
+            "type": "java",
             "name": "RecursividadTriangulo",
             "request": "launch",
             "mainClass": "RecursividadTriangulo",
