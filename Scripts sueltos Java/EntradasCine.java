@@ -19,10 +19,10 @@ public class EntradasCine {
                 dia = Integer.parseInt(System.console().readLine());
                 
                 if (dia == 3) {
-                    System.out.println("Hoy es el día del espectador: el precio de la entrada es de 5 euros.");
+                    System.out.println("Hoy es el dia del espectador: el precio de la entrada es de 5 euros.");
 
                 } else if (dia == 4) {
-                    System.out.println("Hoy es el día de la pareja: si compra dos entradas, solo le costaran 11 euros.");
+                    System.out.println("Hoy es el dia de la pareja: si compra dos entradas, solo le costaran 11 euros.");
                 } else {
                     System.out.println("Hoy cada entrada le sale a 8 euros");
                 }
